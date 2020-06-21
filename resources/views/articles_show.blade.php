@@ -57,7 +57,7 @@
           </a>
         </div>
         @auth
-          @if ($article->user_id === $login_user_id)
+          @if ($article->user_id == $login_user_id)
             <div class='mx-1'>
               <a href={{ route('article.edit', ["id" => $article->id]) }} class='btn btn-outline-dark'>
                 記事の編集
