@@ -34,7 +34,7 @@
       </div>
       <div class='row mx-1'>
         @auth
-          @if ($article->user_id === $login_user_id)
+          @if ($article->user_id == $login_user_id)
             <form method="POST" action="{{ route('article.image_confirm') }}" enctype="multipart/form-data" >
               {{ csrf_field() }}
               <input type="hidden" value={{ $article->id }} name="id">
