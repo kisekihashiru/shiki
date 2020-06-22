@@ -9,7 +9,7 @@
     </div>
     <div class='container'>
       <div class='row'>
-        <h1>{{ $article->article_name }}{{ $article->id }}</h1>
+        <h1>{{ $article->article_name }}</h1>
       </div>
       <div class='row'>
         <p>
@@ -19,12 +19,15 @@
       <div class='row'>
         <div class='col-xl-4'>
           <img class="img" src={{ $thum_1 }} alt="Thumbnail image">
+          <p class='text-lg-center'>figure.1</p>
         </div>
         <div class='col-xl-4'>
           <img class="img" src={{ $thum_2 }} alt="Thumbnail image">
+          <p class='text-lg-center'>figure.2</p>
         </div>
         <div class='col-xl-4'>
           <img class="img" src={{ $thum_3 }} alt="Thumbnail image">
+          <p class='text-lg-center'>figure.3</p>
         </div>
       </div>
       <div class='row my-5'>
