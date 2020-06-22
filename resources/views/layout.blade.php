@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset='utf-8'>
-        <title>engineer bbs</title>
+        <title>Lets Engineering</title>
         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
         <meta name='csrf-token' content='{{ csrf_token() }}'>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -90,7 +90,7 @@
     </head>
     <body>
       <nav class='navbar navbar-expand-md navbar-dark bg-dark fixed-top'>
-          <a class='navbar-brand'>engineering bbs</a>
+          <a class='navbar-brand'>Lets Engineering</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -171,7 +171,7 @@
               <div class="col-md-4">
                 <p>ABOUT US</p>
                 <p>
-                  技術をシェアすることでエンジニアを応援します
+                  技術シェアでエンジニアを応援します
                 </p>
               </div>
               <div class="col-md-4">
@@ -181,6 +181,7 @@
               </div>
               <div class="col-md-4">
                 <p>お問合せ</p>
+                <p>kiseki.hashiru@gmail.com</p>
               </div>
             </div>
           </div>

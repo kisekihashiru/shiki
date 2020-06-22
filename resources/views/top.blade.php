@@ -30,7 +30,9 @@
     <div class='container'>
       <div class="row py-1">
         <div class="col-md-3">
-          <img src="/plan_s.png" class="topCategory d-block mx-auto" alt="plan image">
+          <a href="{{ route('category.index',['id' => 1]) }}">
+            <img src="/plan_s.png" class="topCategory d-block mx-auto" alt="plan image">
+          </a>
           <p class="text-center">
             Planning
           </p>
@@ -39,7 +41,9 @@
           </p>
         </div>
         <div class="col-md-3">
-          <img src="/development_s.png" class="topCategory d-block mx-auto" alt="development image">
+          <a href="{{ route('category.index',['id' => 2]) }}">
+            <img src="/development_s.png" class="topCategory d-block mx-auto" alt="development image">
+          </a>
           <p class="text-center">
             Development
           </p>
@@ -48,7 +52,9 @@
           </p>
         </div>
         <div class="col-md-3">
-          <img src="/design_s.png" class="topCategory d-block mx-auto" alt="design image">
+          <a href="{{ route('category.index',['id' => 3]) }}">
+            <img src="/design_s.png" class="topCategory d-block mx-auto" alt="design image">
+          </a>
           <p class="text-center">
             Design
           </p>
@@ -57,7 +63,9 @@
           </p>
         </div>
         <div class="col-md-3">
-          <img src="/production_s.png" class="topCategory d-block mx-auto" alt="production image">
+          <a href="{{ route('category.index',['id' => 4]) }}">
+            <img src="/production_s.png" class="topCategory d-block mx-auto" alt="production image">
+          </a>
           <p class="text-center">
             Production
           </p>
@@ -66,7 +74,9 @@
           </p>
         </div>
         <div class="col-md-3">
-          <img src="/quality_s.png" class="topCategory d-block mx-auto" alt="quolity image">
+          <a href="{{ route('category.index',['id' => 5]) }}">
+            <img src="/quality_s.png" class="topCategory d-block mx-auto" alt="quolity image">
+          </a>
           <p class="text-center">
             Quality
           </p>
@@ -75,7 +85,9 @@
           </p>
         </div>
         <div class="col-md-3">
-          <img src="technology_s.png" class="topCategory d-block mx-auto" alt="technology image">
+          <a href="{{ route('category.index',['id' => 6]) }}">
+            <img src="technology_s.png" class="topCategory d-block mx-auto" alt="technology image">
+          </a>
           <p class="text-center">
             Technology
           </p>
@@ -84,7 +96,9 @@
           </p>
         </div>
         <div class="col-md-3">
-          <img src="/challenge_s.png" class="topCategory d-block mx-auto" alt="challenge image">
+          <a href="{{ route('category.index',['id' => 7]) }}">
+            <img src="/challenge_s.png" class="topCategory d-block mx-auto" alt="challenge image">
+          </a>
           <p class="text-center">
             Challenge
           </p>
