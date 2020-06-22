@@ -1,4 +1,5 @@
 <?php
+//ver1.0
 
 namespace App\Http\Controllers;
 
@@ -111,34 +112,34 @@ class ArticleController extends Controller
       $article = Article::find($request->input('id'));
       $no_img = 'no_image.jpg';
 
-      if (null !== $request->file('photo_1')) {
+      if (null != $request->file('photo_1')) {
         $thum_name_1 = uniqid("THUM_") . "." . $request->file('photo_1')->guessExtension();
         $request->file('photo_1')->move(public_path()."/img/tmp", $thum_name_1);
         $thum_1 = "/img/tmp/".$thum_name_1;
-      } elseif (null !== $article->img_path_1) {
+      } elseif (null != $article->img_path_1) {
         $thum_1 = $article->img_path_1;
       } else {
-        $thum_1 = "/img/tmp/".$no_img;
+        $thum_1 = "/img/".$no_img;
       }
 
-      if (null !== $request->file('photo_2')) {
+      if (null != $request->file('photo_2')) {
         $thum_name_2 = uniqid("THUM_") . "." . $request->file('photo_2')->guessExtension();
         $request->file('photo_2')->move(public_path()."/img/tmp", $thum_name_2);
         $thum_2 = "/img/tmp/".$thum_name_2;
-      } elseif (null !== $article->img_path_2) {
+      } elseif (null != $article->img_path_2) {
         $thum_2 = $article->img_path_2;
       } else {
-        $thum_2 = "/img/tmp/".$no_img;
+        $thum_2 = "/img/".$no_img;
       }
 
-      if (null !== $request->file('photo_3')) {
+      if (null != $request->file('photo_3')) {
         $thum_name_3 = uniqid("THUM_") . "." . $request->file('photo_3')->guessExtension();
         $request->file('photo_3')->move(public_path()."/img/tmp", $thum_name_3);
         $thum_3 = "/img/tmp/".$thum_name_3;
-      } elseif (null !== $article->img_path_3) {
+      } elseif (null != $article->img_path_3) {
         $thum_3 = $article->img_path_3;
       } else {
-        $thum_3 = "/img/tmp/".$no_img;
+        $thum_3 = "/img/".$no_img;
       }
 
       $hash = array(
@@ -169,17 +170,17 @@ class ArticleController extends Controller
         mkdir(public_path() . "/img/" . $id, 0777);
       }
 
-      if ($request->input("no1") !== "/img/tmp/".$no_img) {
+      if ($request->input("no1") != "/img/".$no_img) {
         $article->img_path_1 = "/img/" . $id . "/" . uniqid("PIC_") . "." . pathinfo($request->input("no1"), PATHINFO_EXTENSION);
         rename (public_path() . $request->input("no1"), public_path() . $article->img_path_1);
       }
 
-      if ($request->input("no2") !== "/img/tmp/".$no_img) {
+      if ($request->input("no2") != "/img/".$no_img) {
         $article->img_path_2 = "/img/" . $id . "/" . uniqid("PIC_") . "." . pathinfo($request->input("no2"), PATHINFO_EXTENSION);
         rename (public_path() . $request->input("no2"), public_path() . $article->img_path_2);
       }
 
-      if ($request->input("no3") !== "/img/tmp/".$no_img) {
+      if ($request->input("no3") != "/img/".$no_img) {
         $article->img_path_3 = "/img/" . $id . "/" . uniqid("PIC_") . "." . pathinfo($request->input("no3"), PATHINFO_EXTENSION);
         rename (public_path() . $request->input("no3"), public_path() . $article->img_path_3);
       }
