@@ -205,6 +205,7 @@ class ArticleController extends Controller
       $article = Article::find($id);
       $article->article_name = $request->article_name;
       $article->content = $request->content;
+      $article->category_id = $request->category_id; 
       $article->save();
 
       return redirect()->route('article.show', ['id' => $article->id]);
