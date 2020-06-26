@@ -46,7 +46,7 @@
                 {{ $article->user->name }}
               </td>
               <td>
-                {{ $article->category->updated_at }}
+                {{ $article->updated_at }}
               </td>
             </tr>
             @endforeach
