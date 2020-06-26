@@ -17,7 +17,7 @@ class CategoryController extends Controller
     public function index($id)
     {
         $category = Category::find($id);
-        $articles = Article::where('category_id', $id)->paginate(9);
+        $articles = Article::where('category_id', $id)->orderBy('updated_at', 'desc')->paginate(9);
 
         return view('category_index', ['category' => $category,'articles' => $articles , 'id' => $id]);
     }
