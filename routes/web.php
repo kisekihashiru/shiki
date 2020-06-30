@@ -34,6 +34,12 @@ Route::post('/article/image_insert', 'ArticleController@image_insert')->name('ar
 Route::delete('/article/{id}', 'ArticleController@destroy')->name('article.delete');
 Route::get('/disclaim', 'ArticleController@disclaim')->name('disclaim');
 
+// Sitemap Route
+Route::get('/sitemap.xml', 'SitemapController@index')->name('sitemap.xml');
+Route::get('/sitemap.xml/article', 'SitemapController@articles');
+Route::get('/sitemap.xml/category', 'SitemapController@categories');
+
+
 // Route::get('/message', 'MemberController@message')->name('message');
 // Route::post('/message', 'MemberController@mail')->name('mail');
 //
