@@ -1,10 +1,18 @@
 @extends('layout')
 
+@section('seo')
+<meta name="keywords" content="技術,設計,生産技術,製造,機械,共有,">
+<title>{{ $article->article_name }} 知識をシェアしよう</title>
+@endsection
+
+
 @section('content')
     <div class="jumbotron articles">
      <div class="container">
-       <h1>記事詳細</h1>
-       技術的な知識をシェアしよう
+       <h1 class="text-light">記事の詳細　知識を共有して業務をスムーズに</h1>
+       <p class="text-light">
+         初歩的な知識から専門的な知識まで.技術的な知識をシェアしよう.
+       </p>
      </div>
     </div>
     <div class='container'>
