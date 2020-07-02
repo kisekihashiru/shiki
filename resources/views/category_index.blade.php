@@ -1,5 +1,12 @@
 @extends('layout')
 
+@section('seo')
+<meta name="keywords" content="カテゴリ別,共有,記事,">
+<meta name="description" content="ものづくりのいろいろな知識をシェアして業務をスムーズに.製造に関する知識や生産移管する知識などを掲載.">
+<title>知識をシェアしよう　カテゴリ別での記事一覧</title>
+@endsection
+
+
 @section('content')
     <div class="jumbotron {{ $category->category_name }}">
      <div class="container">
@@ -7,7 +14,8 @@
          {{ $category->category_name }}
        </h1>
        <p class="text-light">
-         技術的な知識をシェアしよう
+         技術的な知識をシェアしよう.<br>
+         ものづくりの知識をシェアして業務をスムーズに.
        </p>
      </div>
     </div>
