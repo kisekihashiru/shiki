@@ -1,11 +1,18 @@
 @extends('layout')
 
+@section('seo')
+<meta name="keywords" content="エンジニア,生産技術,製造,機械,">
+<meta name="description" content="ものづくりに必要な知識をシェアし,業務に役立てよう.初歩的な知識から専門的な知識まで皆で共有して業務をスムーズに.上司は忙しくてなかなか教えてくれない様々な現場知識,専門性のある知識をここで見つけよう.">
+@endsection
+
 @section('content')
     <div class="jumbotron">
      <div class="container">
        <h1 class="text-light">Lets Engineering</h1>
        <p class="text-light">
-         持っている知識をシェアし, エンジニアリングに役立てる.
+         ものづくりに必要な様々な知識をシェアしよう<br>
+         初歩的な知識から専門的な知識.共有してスムーズに.<br>
+         忙しくて上司はなかなか教えてくれない様々な現場知識や専門性のある知識をここで見つけよう.
        </p>
      </div>
     </div>
@@ -16,13 +23,13 @@
       </div>
       <div class="py-1">
         <p class="text-center">
-          持っている知識をシェアし, エンジニアリングに役立ててもらうことです.
+          ものづくりの知識をシェアし, 役立ててもらうこと.
         </p>
         <p class="text-center">
           機械系, 電気系, 高校生, 大学生, 若手エンジニア, 現場スタッフ, 生産技術者, 設計スタッフ, 製造スタッフ等々.
         </p>
         <p class="text-center">
-          ぜひ活用してください.
+          ぜひ利用して活用してください.
         </p>
       </div>
     </div>
@@ -37,7 +44,8 @@
             Planning
           </p>
           <p class="text-center">
-            企画, 計画に関係します.
+            企画, 計画に関係します.<br>
+            生産計画やコスト計算などもこちら.
           </p>
         </div>
         <div class="col-md-3">
@@ -48,7 +56,8 @@
             Development
           </p>
           <p class="text-center">
-            開発に関係します.
+            開発に関係します.<br>
+            製品や工程開発に必要な知識はこちら.
           </p>
         </div>
         <div class="col-md-3">
@@ -59,7 +68,8 @@
             Design
           </p>
           <p class="text-center">
-            設計, 製図に関係します.
+            設計, 製図に関係します.<br>
+            部品設計に必要な知識はこちら.
           </p>
         </div>
         <div class="col-md-3">
@@ -70,7 +80,8 @@
             Production
           </p>
           <p class="text-center">
-            製造に関係します.
+            製造に関係します.<br>
+            現場の知識や製造技術に必要な知識はこちら.
           </p>
         </div>
         <div class="col-md-3">
@@ -81,7 +92,8 @@
             Quality
           </p>
           <p class="text-center">
-            品質に関係します.
+            品質に関係します.<br>
+            品質に関する知識もこちら.
           </p>
         </div>
         <div class="col-md-3">
@@ -92,7 +104,8 @@
             Technology
           </p>
           <p class="text-center">
-            技術に関係します.
+            技術に関係します.<br>
+            専門的な最先端の技術はこちら.
           </p>
         </div>
         <div class="col-md-3">
@@ -103,7 +116,8 @@
             Challenge
           </p>
           <p class="text-center">
-            挑戦に関係します.
+            挑戦に関係します.<br>
+            新しいことにチャレンジ.
           </p>
         </div>
       </div>
