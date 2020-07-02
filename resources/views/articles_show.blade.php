@@ -52,8 +52,8 @@
       </div>
       <div class='row my-5 mx-1'>
         <div>
-          <a href={{ route('articles') }} class='btn btn-outline-dark'>
-            一覧に戻る
+          <a href="javascript:history.back()" class='btn btn-outline-dark'>
+            戻る
           </a>
         </div>
         @auth

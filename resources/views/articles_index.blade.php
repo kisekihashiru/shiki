@@ -1,10 +1,19 @@
 @extends('layout')
 
+@section('seo')
+<meta name="keywords" content="技術,設計,生産技術,製造,機械,共有,">
+<meta name="description" content="ものづくりに必要な知識をシェアしよう.初歩的な知識から専門的な知識まで皆で共有して業務をスムーズに.製造に関する知識や生産移管する知識などをシェアしよう.">
+<title>知識をシェアしよう　全記事一覧</title>
+@endsection
+
+
 @section('content')
     <div class="jumbotron articles">
      <div class="container">
-       <h1>記事一覧</h1>
-       技術的な知識をシェアしよう
+       <h1 class="text-light">全記事一覧　知識を共有して業務をスムーズに</h1>
+       <p class="text-light">
+         初歩的な知識から専門的な知識まで.技術的な知識をシェアしよう.
+       </p>
      </div>
     </div>
     <div class='container'>
@@ -25,8 +34,8 @@
             <tr>
               <th>No.</th>
               <th>Title</th>
-              <th>Category</th>
-              <th>Contributor</th>
+              <!-- <th>Category</th>
+              <th>Contributor</th> -->
               <th>Last updated</th>
             </tr>
           </thead>
@@ -39,12 +48,12 @@
                   {{ $article->article_name }}
                 </a>
               </td>
-              <td>
+              <!-- <td>
                 {{ $article->category->category_name }}
               </td>
               <td>
                 {{ $article->user->name }}
-              </td>
+              </td> -->
               <td>
                 {{ $article->updated_at }}
               </td>
